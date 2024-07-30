@@ -1,0 +1,12 @@
+<!-- google-maps-demo.component.html -->
+<br><br>4. Este componente es un contenedor de la API oficial de GoogleMaps.<br>
+<google-map
+  height="400px"
+  width="750px"
+  [center]="center"
+  [zoom]="zoom"
+  (mapClick)="moveMap($event)"
+  (mapMousemove)="move($event)" />
+
+<div>Latitude: {{display?.lat}}</div>
+<div>Longitude: {{display?.lng}}</div>
